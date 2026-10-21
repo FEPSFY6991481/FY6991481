@@ -36,6 +36,8 @@
             display: none;
         }
     </style>
+    <title>My Daily Activities</title>
+    <script type="text/javascript" src=https://www.gstatic.com/charts/loader.js></script>
 </head>
 
 <body style="background-color:#FFFFFF;margin-left:50px;">
@@ -86,7 +88,8 @@ active learning and traditional machine learning approaches. Our results show th
     <!-- 6. Introduction Section -->
     <h3 id="Introduction">Introduction</h3>
     <p class="ex1">
-<pre>
+        
+<pre id="Introduction_InText">
 Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt by an intelligent machine through the
 interaction of an oracle with the machine system, over a sequence of learning epochs. A distinctive component in an active system
 is the querying strategy, used to sample candidate training instances from a pool and evaluate them for informativeness,
@@ -101,7 +104,7 @@ such as reaching a stage where information from the selected instances is contra
 
     <!-- 7. Analysis & Discussion, Hyperlink, Data Table, and MathML Equation -->
     <h3 id="Analysis and discussion">Analysis and discussion</h3>
-    <p>
+    <p id="Analysis_InText>
         Bridge deck repair durability is the subject of much recent research such as in 
         <a href="https://www.icevirtuallibrary.com/doi/full/10.1680/jbren.21.00034">Toshihiko et al (2023).</a>
         Table 1: Data on cost and lifespan of bridge repairs
@@ -145,6 +148,12 @@ such as reaching a stage where information from the selected instances is contra
             </mrow>
         </math>
     </p>
+
+    <div id="chart_div"></div>
+    
+    <script>
+        
+    </script>
 
     <!-- 8. References Section -->
     <h3 id="References">References</h3>
