@@ -104,7 +104,7 @@ such as reaching a stage where information from the selected instances is contra
 
     <!-- 7. Analysis & Discussion, Hyperlink, Data Table, and MathML Equation -->
     <h3 id="Analysis and discussion">Analysis and discussion</h3>
-    <p id="Analysis_InText>
+    <p id="Analysis_InText">
         Bridge deck repair durability is the subject of much recent research such as in 
         <a href="https://www.icevirtuallibrary.com/doi/full/10.1680/jbren.21.00034">Toshihiko et al (2023).</a>
         Table 1: Data on cost and lifespan of bridge repairs
@@ -151,25 +151,26 @@ such as reaching a stage where information from the selected instances is contra
 
     <div id="chart_div"></div>
     <script type="text/javascript">
-        google.charts.load('current', { 'packages': ['corechart'] });
-        google.charts.setOnLoadCallback(drawChart);
-        function drawChart() {
-            var data = google.visualization.arrayToDataTable({
-                ['Task', 'Hours per Day'],
-                ['Work', 8],
-                ['Sleep', 8],
-                ['Eat', 2],
-                ['Study', 4],
-                ['Exercise', 2]
-            ]};
+      google.charts.load('current', { 'packages': ['corechart'] });
+      google.charts.setOnLoadCallback(drawChart);
 
-            var options = {
-                    title:'My Daily Activities'
-            };
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Work', 8],
+          ['Sleep', 8],
+          ['Eat', 2],
+          ['Study', 4],
+          ['Exercise', 2]
+        ]);
 
-            var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-            chart.draw(data,options);
-        }
+        var options = {
+          title: 'My Daily Activities'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
     </script>
 
     <!-- 8. References Section -->
